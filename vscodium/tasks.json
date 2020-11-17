@@ -1,0 +1,17 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Fast Build C++",
+            "type": "shell",
+            "command": "g++ -std=c++17 -Wshadow -Wall -O2 -Wno-unused-result ${file} -o ${fileDirname}/${fileBasenameNoExtension}"
+        },
+        {
+            "label": "Safe Build C++",
+            "type": "shell",
+            "command": "g++ -std=c++17 -Wshadow -Wall -g -fsanitize=address -fsanitize=undefined -D_GLIBXX_DEBUG ${file} -o ${fileDirname}/${fileBasenameNoExtension}"
+        }
+    ]
+}

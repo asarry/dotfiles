@@ -1,0 +1,30 @@
+[global_config]
+  window_state = maximise
+[keybindings]
+  switch_to_tab_1 = <Alt>ampersand
+  switch_to_tab_2 = <Alt>eacute
+  switch_to_tab_3 = <Alt>quotedbl
+  switch_to_tab_4 = <Alt>apostrophe
+  switch_to_tab_5 = <Alt>parenleft
+  switch_to_tab_6 = <Alt>minus
+  switch_to_tab_7 = <Alt>egrave
+  switch_to_tab_8 = <Alt>underscore
+  switch_to_tab_9 = <Alt>ccedilla
+  switch_to_tab_10 = <Alt>agrave
+[profiles]
+  [[default]]
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = DejaVu Sans Mono 9
+    foreground_color = "#ffffff"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]

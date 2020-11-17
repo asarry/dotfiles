@@ -1,0 +1,12 @@
+{
+    "python.showStartPage": false,
+    "python.pythonPath": "/usr/bin/python3",
+    "python.linting.enabled": true,
+    "workbench.colorCustomizations" : {
+        "terminal.background": "#000000",
+        "terminal.foreground": "#ffffff"
+        },
+        "workbench.iconTheme": "material-icon-theme",
+        "workbench.colorTheme": "Tokyo City Darker",
+        "editor.fontSize": 11
+}
