@@ -18,6 +18,7 @@
     cursor_color = "#aaaaaa"
     font = DejaVu Sans Mono 9
     foreground_color = "#ffffff"
+    scrollback_infinite = True
     use_system_font = False
 [layouts]
   [[default]]
