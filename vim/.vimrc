@@ -11,6 +11,7 @@ Plug 'preservim/tagbar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ghifarit53/tokyonight-vim'
+Plug 'Yggdroot/indentLine'
 " Edition Plugins
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clangd-completer' }
 Plug 'vim-syntastic/syntastic'
@@ -79,6 +80,9 @@ autocmd FileType cpp nnoremap <F6> :!g++ -std=c++17 -Wshadow -Wall -g -fsanitize
 " NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
 
+" Tagbar
+nnoremap <C-t> :TagbarToggle<CR>
+
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -101,5 +105,5 @@ let g:syntastic_c_checkers = ['cpplint']
 let g:syntastic_cpp_checkers = ['cpplint']
 let g:syntastic_python_checkers = ['pylint']
 
-" Tagbar
-nnoremap <C-t> :TagbarToggle<CR>
+" IndentLine
+let g:indentLine_showFirstIndentLevel=-1
