@@ -68,7 +68,7 @@ set ignorecase      " Ignore case when searching
 set smartcase       " Don't ignore the case if we have a capital
 
 " Misc. Mapping
-inoremap ,, <Esc>   " Map Esc to ,,
+inoremap ,, <Esc>
 
 " Commands
 autocmd FileType cpp nnoremap <F5> :!g++ -std=c++17 -Wshadow -Wall -O2 -Wno-unused-result % -o %:r<CR>
