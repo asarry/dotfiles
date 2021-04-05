@@ -11,7 +11,7 @@ cchmod () {
         elif [[ "$pathname" =~ \.py ]]; then
             chmod 775 "$pathname"
         else
-            chmod 664 "$pathname"
+            chmod 644 "$pathname"
         fi
     done
 }
