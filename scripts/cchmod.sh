@@ -6,10 +6,10 @@ cchmod () {
 
     for pathname in "$1"/*; do
         if [ -d "$pathname" ]; then
-            chmod 775 "$pathname"
+            chmod 755 "$pathname"
             cchmod "$pathname"
         elif [[ "$pathname" =~ \.py ]]; then
-            chmod 775 "$pathname"
+            chmod 755 "$pathname"
         else
             chmod 644 "$pathname"
         fi
