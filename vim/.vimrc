@@ -10,7 +10,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'preservim/tagbar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ghifarit53/tokyonight-vim'
+Plug 'altercation/solarized'
 Plug 'Yggdroot/indentLine'
 " Edition Plugins
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clangd-completer' }
@@ -32,14 +32,11 @@ set ruler           " Show current position
 set title           " Show file in titlebar
 set visualbell      " Mute audible bell
 set showmatch       " Show matching part of brackets pairs
-set cursorline      " Highlight line
 
 " Syntax
 syntax enable                       " Enable syntax highlighting
-set termguicolors                   " Recommended tokyonight settings
-let g:tokyonight_style = 'night'    " Available: night, storm
-let g:tokyonight_enable_italic = 1
-colorscheme tokyonight
+set background=dark
+colorscheme solarized
 
 " Indentiation
 set autoindent
@@ -88,7 +85,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
 " AirlineThemes
-let g:airline_theme='night_owl'
+let g:airline_theme='solarized'
 
 " Syntastic
 set statusline+=%#warningmsg#

@@ -1,7 +1,7 @@
 [Appearance]
 AntiAliasFonts=true
 BoldIntense=true
-ColorScheme=Ocean
+ColorScheme=Solarized
 DimmValue=128
 Font=Noto Mono,9,-1,0,50,0,0,0,0,0
 LineSpacing=0
@@ -24,6 +24,7 @@ Environment=TERM=xterm-256color,COLORTERM=truecolor
 Icon=utilities-terminal
 LocalTabTitleFormat=%d : %n
 Name=Profile 1
+Parent=FALLBACK/
 RemoteTabTitleFormat=(%u) %H
 ShowTerminalSizeHint=true
 SilenceSeconds=10
