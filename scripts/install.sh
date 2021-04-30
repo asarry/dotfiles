@@ -5,7 +5,7 @@ sudo pacman -Syu
 sudo pacman -R thunderbird steam game-devices-udev yakuake konversation cantata
 
 # Install common packages
-sudo pacman -S terminator git libreoffice discord snapd
+sudo pacman -S git tigervnc libreoffice discord snapd
 
 # Install snap packages
 sudo snap install spotify zoom-client
