@@ -35,8 +35,8 @@ set showmatch       " Show matching part of brackets pairs
 
 " Syntax
 syntax enable                       " Enable syntax highlighting
-set background=dark
-colorscheme solarized
+" set background=dark
+" colorscheme solarized
 
 " Indentiation
 set autoindent
@@ -85,7 +85,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
 " AirlineThemes
-let g:airline_theme='solarized'
+" let g:airline_theme='solarized'
 
 " Syntastic
 set statusline+=%#warningmsg#
