@@ -2,10 +2,10 @@
 sudo pacman -Syu
 
 # Remove a few Manjaro pre-installed packages
-sudo pacman -R thunderbird steam game-devices-udev yakuake konversation cantata
+sudo pacman -R thunderbird steam-manjaro game-devices-udev yakuake konversation cantata
 
 # Install common packages
-sudo pacman -S git tigervnc libreoffice discord snapd
+sudo pacman -S tigervnc libreoffice discord snapd
 
 # Install snap packages
 sudo snap install spotify zoom-client
