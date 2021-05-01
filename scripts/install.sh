@@ -8,7 +8,7 @@ sudo pacman -R thunderbird steam-manjaro game-devices-udev yakuake konversation 
 sudo pacman -S tigervnc libreoffice discord snapd
 
 # Install snap packages
-sudo snap install spotify zoom-client
+sudo snap install spotify
 
 # Install packages for Vim
 sudo pacman -S vim base-devel cmake powerline-fonts ctags
