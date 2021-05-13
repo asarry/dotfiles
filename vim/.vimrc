@@ -10,7 +10,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'preservim/tagbar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'altercation/solarized'
+Plug 'joshdick/onedark.vim'
 Plug 'Yggdroot/indentLine'
 " Edition Plugins
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clangd-completer' }
@@ -35,16 +35,16 @@ set showmatch       " Show matching part of brackets pairs
 
 " Syntax
 syntax enable                       " Enable syntax highlighting
-" set background=dark
-" colorscheme solarized
+set termguicolors
+colorscheme onedark
 
 " Indentiation
 set autoindent
 set smartindent
 set smarttab        " Smart tab adding and removing
-set softtabstop=4
-set shiftwidth=4
-set tabstop=4
+set softtabstop=8
+set shiftwidth=8
+set tabstop=8
 set expandtab       " Expand tab to spaces
 
 " Split
@@ -85,7 +85,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
 " AirlineThemes
-" let g:airline_theme='solarized'
+let g:airline_theme='onedark'
 
 " Syntastic
 set statusline+=%#warningmsg#
