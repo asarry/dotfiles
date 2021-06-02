@@ -34,7 +34,7 @@ set visualbell      " Mute audible bell
 set showmatch       " Show matching part of brackets pairs
 
 " Syntax
-syntax enable                       " Enable syntax highlighting
+syntax enable       " Enable syntax highlighting
 set termguicolors
 colorscheme onedark
 
@@ -42,15 +42,18 @@ colorscheme onedark
 set autoindent
 set smartindent
 set smarttab        " Smart tab adding and removing
-set softtabstop=8
-set shiftwidth=8
-set tabstop=8
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+autocmd FileType c setlocal tabstop=8 softtabstop=8 shiftwidth=8
+autocmd FileType h setlocal tabstop=8 softtabstop=8 shiftwidth=8
 set expandtab       " Expand tab to spaces
+set colorcolumn=80
 
 " Split
 set splitright
 set splitbelow
-nnoremap <C-h> <C-w>h    " Navigation between split windows
+nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
@@ -96,10 +99,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
-let g:syntastic_check_onw = 1
+let g:syntastic_check_on_w = 1
 
-let g:syntastic_c_checkers = ['cpplint']
-let g:syntastic_cpp_checkers = ['cpplint']
+let g:syntastic_c_checkers = ['gcc']
+let g:syntastic_cpp_checkers = ['g++']
 let g:syntastic_python_checkers = ['pylint']
 
 " IndentLine
