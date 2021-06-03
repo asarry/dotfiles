@@ -17,8 +17,8 @@ sudo pacman -S vim base-devel cmake powerline-fonts ctags
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# Install a few linters with pip3
-pip3 install pylint cpplint
+# Install pylint with pip3
+pip3 install pylint
 
 # Install R and RStudio packages
 sudo pacman -S r
