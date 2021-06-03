@@ -27,11 +27,13 @@ call plug#end()
 filetype plugin indent on
 
 " General
+set encoding=utf-8
 set number          " Show line numbers
 set ruler           " Show current position
 set title           " Show file in titlebar
 set visualbell      " Mute audible bell
 set showmatch       " Show matching part of brackets pairs
+set colorcolumn=80  " Show a vertical line at 80 characters
 
 " Syntax
 syntax enable       " Enable syntax highlighting
@@ -45,10 +47,9 @@ set smarttab        " Smart tab adding and removing
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-autocmd FileType c setlocal tabstop=8 softtabstop=8 shiftwidth=8
-autocmd FileType h setlocal tabstop=8 softtabstop=8 shiftwidth=8
+autocmd FileType c :setlocal tabstop=8 softtabstop=8 shiftwidth=8
+autocmd FileType cpp :setlocal tabstop=8 softtabstop=8 shiftwidth=8
 set expandtab       " Expand tab to spaces
-set colorcolumn=80
 
 " Split
 set splitright
