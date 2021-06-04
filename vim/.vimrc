@@ -91,11 +91,11 @@ let g:airline_theme='onedark'
 
 " ALE
 let g:airline#extensions#ale#enabled = 1
-let airline#extensions#ale#error_symbol = 'E:'
-let airline#extensions#ale#warning_symbol = 'W:'
-let airline#extensions#ale#show_line_numbers = 1
-let airline#extensions#ale#open_lnum_symbol = '(L'
-let airline#extensions#ale#close_lnum_symbol = ')'
+let g:airline#extensions#ale#error_symbol = 'E:'
+let g:airline#extensions#ale#warning_symbol = 'W:'
+let g:airline#extensions#ale#show_line_numbers = 1
+let g:airline#extensions#ale#open_lnum_symbol = '(L'
+let g:airline#extensions#ale#close_lnum_symbol = ')'
 let g:ale_linters = {
 \   'python': ['pylint'],
 \   'c': ['gcc'],
