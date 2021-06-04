@@ -34,6 +34,7 @@ set title           " Show file in titlebar
 set visualbell      " Mute audible bell
 set showmatch       " Show matching part of brackets pairs
 set colorcolumn=80  " Show a vertical line at 80 characters
+vnoremap <F12> :w !xclip -selection clipboard
 
 " Syntax
 syntax enable       " Enable syntax highlighting
