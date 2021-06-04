@@ -14,9 +14,9 @@ Plug 'joshdick/onedark.vim'
 Plug 'Yggdroot/indentLine'
 " Edition Plugins
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clangd-completer' }
-Plug 'vim-syntastic/syntastic'
+Plug 'dense-analysis/ale'
+Plug 'tpope/vim-commentary'
 Plug 'Raimondi/delimitMate'
-Plug 'tpope/vim-surround'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -41,14 +41,12 @@ set termguicolors
 colorscheme onedark
 
 " Indentiation
-set autoindent
+set autoindent      " Copy indent when starting a new line
 set smartindent
 set smarttab        " Smart tab adding and removing
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-autocmd FileType c :setlocal tabstop=8 softtabstop=8 shiftwidth=8
-autocmd FileType cpp :setlocal tabstop=8 softtabstop=8 shiftwidth=8
 set expandtab       " Expand tab to spaces
 
 " Split
@@ -91,20 +89,22 @@ let g:airline#extensions#tabline#enabled = 1
 " AirlineThemes
 let g:airline_theme='onedark'
 
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-let g:syntastic_check_on_w = 1
-
-let g:syntastic_c_checkers = ['gcc']
-let g:syntastic_cpp_checkers = ['g++']
-let g:syntastic_python_checkers = ['pylint']
+" Ale
+let g:airline#extensions#ale#enabled = 1
+let airline#extensions#ale#error_symbol = 'E:'
+let airline#extensions#ale#warning_symbol = 'W:'
+let airline#extensions#ale#show_line_numbers = 1
+let airline#extensions#ale#open_lnum_symbol = '(L'
+let airline#extensions#ale#close_lnum_symbol = ')'
+let g:ale_linters = {
+\   'python': ['pylint'],
+\   'c': ['gcc'],
+\   'cpp': ['g++'],
+\}
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\}
+let g:ale_fix_on_save = 1
 
 " IndentLine
-let g:indentLine_showFirstIndentLevel=-1
+let g:indentLine_showFirstIndentLevel = -1
