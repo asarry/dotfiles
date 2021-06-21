@@ -78,7 +78,7 @@ autocmd FileType cpp nnoremap <F6> :!g++ -std=c++17 -Wshadow -Wall -g -fsanitize
 " Plugins Settings
 
 " NERDTree
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>:NERDTreeRefreshRoot<CR>
 
 " Tagbar
 nnoremap <C-t> :TagbarToggle<CR>
