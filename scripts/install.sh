@@ -5,7 +5,7 @@ sudo pacman -Syu
 sudo pacman -R thunderbird steam-manjaro game-devices-udev yakuake konversation cantata
 
 # Install common packages
-sudo pacman -S ranger valgrind libreoffice xournalpp discord tigervnc snapd
+sudo pacman -S snapd ranger valgrind tigervnc krdc libvncserver freerdp libreoffice xournalpp
 
 # Install snap packages
 sudo snap install spotify
