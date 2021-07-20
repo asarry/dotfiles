@@ -10,7 +10,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'preservim/tagbar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'joshdick/onedark.vim'
+Plug 'rakr/vim-one'
 Plug 'Yggdroot/indentLine'
 " Edition Plugins
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clangd-completer' }
@@ -39,7 +39,8 @@ vnoremap <F12> :w !xclip -selection clipboard
 " Syntax
 syntax enable       " Enable syntax highlighting
 set termguicolors
-colorscheme onedark
+set background=light
+colorscheme one
 
 " Indentiation
 set autoindent      " Copy indent when starting a new line
@@ -88,7 +89,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
 " AirlineThemes
-let g:airline_theme='onedark'
+let g:airline_theme='base16_one_light'
 
 " ALE
 let g:airline#extensions#ale#enabled = 1
